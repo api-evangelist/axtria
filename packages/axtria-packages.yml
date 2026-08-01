@@ -1,0 +1,52 @@
+generated: '2026-07-31'
+method: searched
+source: public package-registry sweep + Axtria product/docs pages
+packages: []
+summary: |
+  No first-party Axtria client library exists in any public package registry. Axtria
+  ships enterprise SaaS with contract-gated integration; there is no self-service SDK
+  surface to catalogue. Recorded as evidence of absence — no `Packages` or `SDKs`
+  pointer is claimed in apis.yml.
+registries_searched:
+- registry: npm
+  query: axtria
+  hits: 0
+  note: single unrelated result (dt-copilot-agents), not Axtria
+- registry: pypi
+  queries: [axtria, axtria-sdk, axtria-api, pyaxtria]
+  hits: 0
+- registry: maven-central
+  query: axtria
+  hits: 0
+- registry: nuget
+  query: axtria
+  hits: 0
+- registry: rubygems
+  query: axtria
+  hits: 0
+- registry: packagist
+  query: axtria
+  hits: 0
+  note: 8 results returned, all unrelated ("atria*" fuzzy matches)
+- registry: crates.io
+  query: axtria
+  hits: 0
+source_repositories:
+- host: github.com
+  org: axtria
+  status: 404
+  note: no GitHub organization named axtria exists
+- host: github.com
+  account: Axtria
+  type: User
+  public_repos: 0
+  created: '2014-10-24'
+  note: an empty personal account, not a verified Axtria engineering org — not wired
+    as GitHubOrganization
+distribution:
+- channel: Salesforce AppExchange
+  listing: Axtria SalesIQ
+  url: https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FN7fRUAT
+  note: a managed-package application listing, not a developer client library
+x-evidence:
+  fetched: '2026-07-31'

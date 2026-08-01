@@ -1,17 +1,41 @@
 aid: axtria
 name: Axtria
-description: 'Axtria is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Axtria is an AI-first cloud software and data analytics company built
+  for the life sciences industry, founded in 2010 and headquartered in Berkeley Heights,
+  New Jersey. Its cloud product suite — Axtria DataMAx (AI-driven data management),
+  Axtria InsightsMAx.ai (agentic AI and cloud analytics), Axtria SalesIQ (sales planning
+  and operations), Axtria MarketingIQ (marketing analytics and omnichannel measurement)
+  and Axtria CustomerIQ (omnichannel customer engagement) — helps pharmaceutical,
+  biotech, medical device, animal health and consumer health commercial teams turn
+  data into targeting, segmentation, incentive compensation, field force and brand
+  decisions. Axtria reports 3,600+ employees serving 100+ life sciences companies,
+  including 16+ of the top 20 pharmaceutical enterprises. Axtria publishes no public
+  developer portal and no open API documentation: the product documentation host
+  docs.axtria.com is HTTP Basic-auth gated to customers, and platform integration
+  (Veeva CRM, Salesforce, Marketo and 20+ structured and unstructured life sciences
+  data sources over SFTP and APIs) is delivered under enterprise contract rather
+  than through a self-service developer surface.'
 url: https://raw.githubusercontent.com/api-evangelist/axtria/refs/heads/main/apis.yml
+image: https://insights.axtria.com/hubfs/logo.svg
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-31'
 modified: '2026-07-31'
 tags:
 - Company
+- Life Sciences
+- Pharmaceuticals
+- Analytics
+- Data Management
+- Artificial Intelligence
+- Sales Operations
+- Marketing
+- Cloud Software
+- Healthcare
+- Commercial Operations
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +44,57 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.axtria.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/axtria_stock/
+- type: Blog
+  url: https://www.axtria.com/blog
+- type: ChangeLog
+  url: https://www.axtria.com/product-release-notes
+- type: ChangeLog
+  url: changelog/axtria-changelog.yml
+- type: Lifecycle
+  url: lifecycle/axtria-lifecycle.yml
+- type: Conformance
+  url: conformance/axtria-conformance.yml
+- type: DomainSecurity
+  url: security/axtria-domain-security.yml
+- type: LLMsTxt
+  url: llms/axtria-llms.txt
+- type: Products
+  url: https://www.axtria.com/cloud-products/
+- type: PrivacyPolicy
+  url: https://www.axtria.com/privacy-statement/
+- type: CookiePolicy
+  url: https://www.axtria.com/cookies-policy/
+- type: CodeOfConduct
+  url: https://www.axtria.com/axtria-supplier-code-of-conduct
+- type: Contact
+  url: https://www.axtria.com/contact-us/
+- type: About
+  url: https://www.axtria.com/about-us/our-story/
+- type: Leadership
+  url: https://www.axtria.com/about-us/leadership/
+- type: Partners
+  url: https://www.axtria.com/about-us/partnerships-alliances/
+- type: Careers
+  url: https://www.axtria.com/axtria-careers/
+- type: PressReleases
+  url: https://www.axtria.com/press-releases
+- type: Marketplace
+  url: https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FN7fRUAT
+- type: LinkedIn
+  url: https://www.linkedin.com/company/axtria
+- type: Twitter
+  url: https://x.com/Axtria
+- type: YouTube
+  url: https://www.youtube.com/user/AxtriaINC
+- type: Facebook
+  url: https://www.facebook.com/AxtriaInc
+- type: Instagram
+  url: https://www.instagram.com/lifeataxtria
+x-enrichment:
+  date: '2026-07-31'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

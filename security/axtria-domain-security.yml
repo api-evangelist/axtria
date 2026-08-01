@@ -1,0 +1,33 @@
+generated: '2026-07-31'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.axtria.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug  7 10:24:49 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: docs.axtria.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 11 04:25:19 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  note: 'product documentation host; HTTP Basic auth gated (401, WWW-Authenticate:
+    Basic realm="docs.axtria.com")'
+- host: insights.axtria.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Feb 11 11:02:44 2027 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  note: HubSpot-hosted content/asset host (hubfs) used for the blog and resource library
+domains:
+- domain: axtria.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

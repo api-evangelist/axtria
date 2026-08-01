@@ -1,0 +1,49 @@
+generated: '2026-07-31'
+method: searched
+source: https://www.axtria.com/product-release-notes
+versioning:
+  scheme: seasonal-release-train
+  current: Summer 2026 (DataMAx, MarketingIQ) / Winter 2026 (SalesIQ)
+  docs: https://www.axtria.com/product-release-notes
+  note: |
+    Per-product seasonal releases (Winter/Spring/Summer/Fall + year). No semantic
+    versions, no API version identifiers, no dated machine-readable feed. Because
+    Axtria publishes no public API, there is no URI-path, header or date-based API
+    versioning contract to record.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No public deprecation or sunset policy is published. None of the harvested
+    release notes announce deprecations or breaking changes.
+sla:
+  url: null
+  uptime_target: null
+  note: No public SLA or uptime commitment. Availability terms are contracted per
+    enterprise agreement.
+status_page: null
+status_page_note: |
+  No status page found. status.axtria.com does not resolve; axtria.statuspage.io
+  redirects to the Atlassian Statuspage marketing site (i.e. the subdomain is not
+  provisioned) — recorded here so a later pass does not re-record that redirect as
+  a hit.
+documentation:
+  url: https://docs.axtria.com/
+  public: false
+  gate: 'HTTP Basic auth (401, WWW-Authenticate: Basic realm="docs.axtria.com")'
+  note: |
+    Axtria runs a real product documentation host, but it is credential-gated to
+    customers. It is recorded here as a discovered surface, NOT wired as a
+    `Documentation` pointer in apis.yml, because nothing on it is publicly readable.
+deprecated_operations: []
+x-evidence:
+  fetched: '2026-07-31'
+  probes:
+  - url: https://status.axtria.com/
+    result: DNS does not resolve
+  - url: https://axtria.statuspage.io/
+    http_status: 200
+    result: redirects to https://www.atlassian.com/software/statuspage — not an Axtria
+      status page
+  - url: https://docs.axtria.com/
+    http_status: 401
+    result: HTTP Basic auth challenge

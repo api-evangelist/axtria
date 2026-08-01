@@ -1,0 +1,79 @@
+generated: '2026-07-31'
+method: probed
+source: live GET probes of the /.well-known/ discovery surface on every known Axtria host
+summary: |
+  No /.well-known/ discovery document is published on any Axtria host. The marketing
+  host (www.axtria.com) answers 404 for every probed path; the product documentation
+  host (docs.axtria.com) is behind HTTP Basic auth and answers 401 for every path,
+  so nothing on that host is anonymously discoverable either. Recorded as evidence
+  of absence — no WellKnown/SecurityTxt/APICatalog artifact exists to harvest.
+hosts:
+- host: www.axtria.com
+  documents: []
+  probed:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: axtria.com
+  documents: []
+  probed:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: docs.axtria.com
+  gated: true
+  gate: 'HTTP Basic auth (WWW-Authenticate: Basic realm="docs.axtria.com")'
+  documents: []
+  probed:
+  - path: /.well-known/security.txt
+    status: 401
+  - path: /.well-known/openid-configuration
+    status: 401
+  - path: /.well-known/oauth-authorization-server
+    status: 401
+  - path: /.well-known/api-catalog
+    status: 401
+  - path: /.well-known/ai-plugin.json
+    status: 401
+  - path: /.well-known/agent-card.json
+    status: 401
+  - path: /.well-known/agent.json
+    status: 401
+hosts_not_resolving:
+- api.axtria.com
+- apis.axtria.com
+- developer.axtria.com
+- developers.axtria.com
+- portal.axtria.com
+- support.axtria.com
+- help.axtria.com
+- status.axtria.com
+- trust.axtria.com
+- security.axtria.com
+x-evidence:
+  fetched: '2026-07-31'
+  note: Probes ran against every host resolvable under axtria.com plus the apex and
+    www hosts. No 200 was observed for any /.well-known/ path, so no raw document
+    was saved and no SecurityTxt/APICatalog pointer is claimed.

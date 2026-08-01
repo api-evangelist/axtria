@@ -1,0 +1,71 @@
+# Axtria
+
+> Axtria is an AI-first cloud software and data analytics company for the life sciences
+> industry, founded in 2010 and headquartered in Berkeley Heights, New Jersey. Its cloud
+> products help pharmaceutical, biotech, medical device, animal health and consumer health
+> commercial teams turn data into targeting, segmentation, incentive compensation, field
+> force and brand decisions. Axtria reports 3,600+ employees serving 100+ life sciences
+> companies, including 16+ of the top 20 pharmaceutical enterprises.
+
+## API surface
+
+Axtria publishes **no public API, no developer portal and no machine-readable API contract**.
+As of 2026-07-31 the following were probed and missed on every resolvable Axtria host
+(`www.axtria.com`, `axtria.com`, `docs.axtria.com`): `/openapi.json`, `/swagger.json`,
+`/llms.txt`, `/.well-known/security.txt`, `/.well-known/openid-configuration`,
+`/.well-known/oauth-authorization-server`, `/.well-known/api-catalog`,
+`/.well-known/ai-plugin.json`, `/.well-known/agent-card.json`, `/.well-known/agent.json`.
+`api.axtria.com`, `developer.axtria.com`, `developers.axtria.com`, `portal.axtria.com`,
+`support.axtria.com` and `status.axtria.com` do not resolve.
+
+Axtria runs a real product documentation host at `https://docs.axtria.com/`, but it is
+**HTTP Basic-auth gated to customers** (401 on every path), so no documentation, reference
+or contract is publicly readable. Platform integration — Veeva CRM / Veeva Vault CRM,
+Salesforce, Marketo and 20+ structured and unstructured life sciences data sources over
+SFTP and APIs — is delivered under enterprise contract, not through self-service.
+
+No hosted MCP server, no A2A agent card, no published SDK on npm / PyPI / Maven Central /
+NuGet / RubyGems / pkg.go.dev, and no `axtria` GitHub organization were found.
+
+## Cloud products
+
+- [Axtria DataMAx](https://www.axtria.com/cloud-products/axtria-datamax-ai-driven-data-management/): AI-driven life sciences data management and ingestion
+- [Axtria DataMAx Emerging Pharma](https://www.axtria.com/cloud-products/axtria-datamax-emerging-pharma/): packaged data platform for emerging pharma
+- [Axtria InsightsMAx.ai](https://www.axtria.com/cloud-products/axtria-insightsmax-cloud-analytics/): agentic AI platform — agents, apps and enterprise APIs (contract-gated)
+- [Axtria SalesIQ](https://www.axtria.com/cloud-products/axtria-salesiq-ai-driven-sales-planning-and-operations/): sales planning, territory alignment and incentive compensation
+- [Axtria MarketingIQ](https://www.axtria.com/cloud-products/axtria-marketingiq-marketing-analytics/): marketing analytics and omnichannel measurement
+- [Axtria CustomerIQ](https://www.axtria.com/cloud-products/axtria-customeriq-omnichannel-customer-engagement/): omnichannel customer engagement
+
+## Docs
+
+- [Cloud products overview](https://www.axtria.com/cloud-products/)
+- [Product release notes](https://www.axtria.com/product-release-notes): seasonal (Winter/Spring/Summer/Fall) release train, per product
+- [Product documentation](https://docs.axtria.com/): customer-only, HTTP Basic auth
+- [Salesforce AppExchange listing — Axtria SalesIQ](https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000FN7fRUAT)
+
+## Company
+
+- [Website](https://www.axtria.com/)
+- [Our story](https://www.axtria.com/about-us/our-story/)
+- [Leadership](https://www.axtria.com/about-us/leadership/)
+- [Partnerships and alliances](https://www.axtria.com/about-us/partnerships-alliances/)
+- [Blog](https://www.axtria.com/blog)
+- [Press releases](https://www.axtria.com/press-releases)
+- [Careers](https://www.axtria.com/axtria-careers/)
+- [Contact](https://www.axtria.com/contact-us/)
+
+## Legal and privacy
+
+- [Privacy statement](https://www.axtria.com/privacy-statement/): names EU GDPR, UK GDPR, CCPA, HIPAA and FCRA; DPO contact data_privacy@axtria.com
+- [Cookies policy](https://www.axtria.com/cookies-policy/)
+- [Supplier code of conduct](https://www.axtria.com/axtria-supplier-code-of-conduct)
+- No published terms of service, security policy, vulnerability disclosure program or trust center was found.
+
+## API Evangelist artifacts
+
+- changelog/axtria-changelog.yml: structured seasonal release history per product
+- lifecycle/axtria-lifecycle.yml: versioning, deprecation, SLA and status-page posture
+- conformance/axtria-conformance.yml: standards and regulatory posture with evidence
+- security/axtria-domain-security.yml: probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC
+- well-known/axtria-well-known.yml: probed /.well-known/ discovery surface (all miss)
+- packages/axtria-packages.yml: registry sweep result (no first-party client libraries)

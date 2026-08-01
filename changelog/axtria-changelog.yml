@@ -1,0 +1,106 @@
+generated: '2026-07-31'
+method: searched
+source: https://www.axtria.com/product-release-notes
+docs: https://www.axtria.com/product-release-notes
+scheme: seasonal
+scheme_note: |
+  Axtria ships its cloud products on a seasonal release train — Winter / Spring /
+  Summer / Fall plus the calendar year (e.g. "Axtria SalesIQ Winter 2026 Release
+  Notes"). No semantic version numbers, no build identifiers and no per-entry
+  publication dates are exposed on the public release-notes pages, and there is no
+  machine-readable feed. Each product line versions independently; there is no
+  single platform version.
+products:
+- name: Axtria SalesIQ
+  url: https://www.axtria.com/cloud-products/axtria-salesiq-ai-driven-sales-planning-and-operations/
+- name: Axtria DataMAx
+  url: https://www.axtria.com/cloud-products/axtria-datamax-ai-driven-data-management/
+- name: Axtria MarketingIQ
+  url: https://www.axtria.com/cloud-products/axtria-marketingiq-marketing-analytics/
+- name: Axtria CustomerIQ
+  url: https://www.axtria.com/cloud-products/axtria-customeriq-omnichannel-customer-engagement/
+current:
+  Axtria DataMAx: Summer 2026
+  Axtria MarketingIQ: Summer 2026
+  Axtria SalesIQ: Winter 2026
+entries:
+- product: Axtria DataMAx
+  release: Summer 2026
+  url: https://www.axtria.com/product-release-notes/axtria-datamax-summer-release-notes-2026
+  breaking: false
+  deprecations: []
+  highlights:
+  - Data Quality Agent with AI-recommended rules and feedback-driven accuracy
+  - Job Monitoring Agent producing plain-language batch-failure summaries and root-cause
+    classification
+  - Bulk Ingestion Agent that groups files by schema similarity and runs ingestion
+    definitions in parallel
+  - BRMS conversational business-rule authoring
+  - Subset rule approval workflow with parallel editing
+  - Rebuilt data lineage engine on an in-house SQL parser
+- product: Axtria MarketingIQ
+  release: Summer 2026
+  url: https://www.axtria.com/product-release-notes/axtria-marketingiq-summer-release-notes-2026
+  breaking: false
+  deprecations: []
+- product: Axtria SalesIQ
+  release: Winter 2026
+  url: https://www.axtria.com/product-release-notes/axtria-salesiq-winter-2026-release-notes
+  breaking: false
+  deprecations: []
+  highlights:
+  - Data Validation Agent for incentive compensation
+  - NextGen IC operations configuration enhancements (automatic column updates, faster
+    pay-grid copy across business units)
+  - Customer Engagement module with Pre-Call and Post-Call agents plus visit planning
+  - Field Performance Agent (trend charts, key-driver analysis, action guidance)
+  - Territory and roster enhancements with governed metric controls and dynamic roster
+    rules
+  - New CRM integration layer for Veeva Vault CRM with standardized attribute mapping
+    and bi-directional synchronization
+- product: Axtria DataMAx
+  release: Winter 2026
+  url: https://www.axtria.com/product-release-notes/axtria-datamax-winter-2026-release-notes
+- product: Axtria MarketingIQ
+  release: Winter 2026
+  url: https://www.axtria.com/product-release-notes/axtria-marketingiq-winter-release-2026
+- product: Axtria SalesIQ
+  release: Fall 2025
+  url: https://www.axtria.com/product-release-notes/axtria-salesiq-fall-release-notes-2025
+- product: Axtria MarketingIQ
+  release: Fall 2025
+  url: https://www.axtria.com/product-release-notes/axtria-marketingiq-fall-release-notes-2025
+- product: Axtria DataMAx
+  release: Spring 2025
+  url: https://www.axtria.com/product-release-notes/axtria-datamax-spring-release-notes-2025
+- product: Axtria SalesIQ
+  release: Spring 2025
+  url: https://www.axtria.com/product-release-notes/axtria-salesiq-spring-release-notes-2025
+- product: Axtria MarketingIQ
+  release: Spring 2025
+  url: https://www.axtria.com/product-release-notes/axtria-marketingiq-spring-release-notes-2025
+- product: Axtria CustomerIQ
+  release: Spring 2025
+  url: https://www.axtria.com/product-release-notes/axtria-customeriq-spring-release-notes-2025
+- product: Axtria CustomerIQ
+  release: Fall
+  url: https://www.axtria.com/product-release-notes/axtria-customeriq-fall-release-notes
+- product: Axtria CustomerIQ
+  release: Winter 2024
+  url: https://www.axtria.com/product-release-notes/axtria-customeriq-winter-2024-release-notes
+- product: Axtria DataMAx
+  release: Winter 2024
+  url: https://www.axtria.com/product-release-notes/axtria-datamax-winter-release-notes-2024
+- product: Axtria SalesIQ
+  release: Winter 2024
+  url: https://www.axtria.com/product-release-notes/axtria-salesiq-winter-2024-release-notes
+x-evidence:
+  fetched: '2026-07-31'
+  url: https://www.axtria.com/product-release-notes
+  http_status: 200
+  note: |
+    Entry list harvested from the public release-notes hub (paginated) and the
+    site sitemap. Individual release-note pages carry no machine-readable date,
+    so no dates are recorded rather than recording ones that could not be verified.
+    API/integration-affecting change was found only in the SalesIQ Winter 2026 note
+    (Veeva Vault CRM integration layer); no public API contract accompanies it.
