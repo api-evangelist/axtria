@@ -66,3 +66,30 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: axtria-cdisc-members
+  label: CDISC (members)
+  partner: cdisc
+  partner_name: CDISC (members)
+  category: Clinical data standards member
+  type: register
+  channel: standard-directory
+  evidence: https://www.cdisc.org/company/axtria
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: CDISC member search (cdisc.org/members/search + public company page website)
+    standard: CDISC clinical data standards (SDTM / ADaM / CDASH / ODM)
+    spec_file: null
+    role: cdisc-member
+    registered_name: Axtria
+    register_id: axtria
+    member_industry: null
+    listed_website: https://www.axtria.com/
+    matched_domain: axtria.com
+    matched_by: domain
+    signal_note: 'self-filed paid membership: listing alone = standard-participant (standards adopter); partner_tier
+      is the membership level, never weighted as a tier; hand-reviewed'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+  status: not-a-workflow
+  arazzo: null

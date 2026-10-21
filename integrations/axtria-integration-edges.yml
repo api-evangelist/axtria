@@ -9,6 +9,10 @@ checked:
 - https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/security_review_overview.htm
 - https://slack.com/marketplace
 - salesforce/integrations/salesforce-integration-edges.yml
+- https://api.fda.gov/drug/drugsfda.json
+- https://clinicaltrials.gov/api/v2/studies
+- https://euclinicaltrials.eu/ctis-public/search
+- https://www.cdisc.org/members/search
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -81,6 +85,33 @@ edges:
   detected: '2026-10-21'
   detected_by: mirror-platform-listings.py
   category: compensationManagement
+- partner_name: CDISC (members)
+  partner: cdisc
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  partner_tier: GOLD
+  evidence: https://www.cdisc.org/company/axtria
+  category: Clinical data standards member
+  contract_reference:
+    register: CDISC member search (cdisc.org/members/search + public company page website)
+    standard: CDISC clinical data standards (SDTM / ADaM / CDASH / ODM)
+    spec_file: null
+    role: cdisc-member
+    registered_name: Axtria
+    register_id: axtria
+    member_industry: null
+    listed_website: https://www.axtria.com/
+    matched_domain: axtria.com
+    matched_by: domain
+    signal_note: 'self-filed paid membership: listing alone = standard-participant (standards adopter); partner_tier
+      is the membership level, never weighted as a tier; hand-reviewed'
+    detected_by: sweep-clinical-trial-sponsors.py
+    detected: '2026-10-21'
+  detected_by: sweep-clinical-trial-sponsors.py
+  first_seen: '2026-10-21'
 source:
 - https://appexchange.salesforce.com/
 - https://api.appexchange.salesforce.com/recommendations/v3/listings?type=apps
