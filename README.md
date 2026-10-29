@@ -64,38 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Axtria is an AI-first cloud software and data analytics company for the life sciences
-industry, founded in 2010 and headquartered in Berkeley Heights, New Jersey. Its cloud
-products — Axtria DataMAx, Axtria InsightsMAx.ai, Axtria SalesIQ, Axtria MarketingIQ and
-Axtria CustomerIQ — serve pharmaceutical, biotech, medical device, animal health and
-consumer health commercial teams. Axtria reports 3,600+ employees serving 100+ life
-sciences companies, including 16+ of the top 20 pharmaceutical enterprises.
+Axtria is an AI-first cloud software and data analytics company built for the life sciences industry, founded in 2010 and headquartered in Berkeley Heights, New Jersey. Its cloud product suite — Axtria DataMAx (AI-driven data management), Axtria InsightsMAx.ai (agentic AI and cloud analytics), Axtria SalesIQ (sales planning and operations), Axtria MarketingIQ (marketing analytics and omnichannel measurement) and Axtria CustomerIQ (omnichannel customer engagement) — helps pharmaceutical, biotech, medical device, animal health and consumer health commercial teams turn data into targeting, segmentation, incentive compensation, field force and brand decisions. Axtria reports 3,600+ employees serving 100+ life sciences companies, including 16+ of the top 20 pharmaceutical enterprises. Axtria publishes no public developer portal and no open API documentation: the product documentation host docs.axtria.com is HTTP Basic-auth gated to customers, and platform integration (Veeva CRM, Salesforce, Marketo and 20+ structured and unstructured life sciences data sources over SFTP and APIs) is delivered under enterprise contract rather than through a self-service developer surface.
 
-- https://www.axtria.com/
-- https://forgeglobal.com/axtria_stock/ (secondary market listing)
+**Areas:** Company · Life Sciences · Pharmaceuticals · Analytics · Data Management · Artificial Intelligence · Sales Operations · Marketing · Cloud Software · Healthcare · Commercial Operations
 
-## API surface
+## Axtria on APIs.io
 
-**None public.** Enrichment probes on 2026-07-31 found no OpenAPI/Swagger document, no
-GraphQL endpoint, no MCP server, no A2A agent card, no `/.well-known/` document, no
-webhook or event catalog, no SDK in any public package registry, and no Axtria GitHub
-organization.
+Everything profiled for Axtria is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/axtria/](https://apis.io/providers/axtria/)** — or go straight to one of the APIs or properties below.
 
-Axtria runs a real product documentation host at `https://docs.axtria.com/`, but it is
-**HTTP Basic-auth gated to customers** (401 on every path). Platform integration — Veeva
-CRM / Veeva Vault CRM, Salesforce, Marketo and 20+ life sciences data sources over SFTP
-and APIs — is delivered under enterprise contract rather than a self-service developer
-surface. The InsightsMAx.ai launch positions "Agents, Apps and APIs", but no public
-contract accompanies it.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Dir | File | Method |
-|---|---|---|
-| `changelog/` | `axtria-changelog.yml` | searched — seasonal release train, 15 entries across 4 products |
-| `lifecycle/` | `axtria-lifecycle.yml` | searched — versioning, deprecation, SLA, status-page posture |
-| `conformance/` | `axtria-conformance.yml` | searched — GDPR/UK GDPR/CCPA/HIPAA/FCRA named; no published certification |
-| `security/` | `axtria-domain-security.yml` | probed — TLS 1.3 + HSTS on all hosts; SPF + DMARC `p=reject`; no DNSSEC, no CAA |
-| `well-known/` | `axtria-well-known.yml` | probed — evidence of absence across every host |
-| `packages/` | `axtria-packages.yml` | searched — evidence of absence across 7 registries |
-| `llms/` | `axtria-llms.txt` | generated |
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Axtria Domain Security](https://apis.io/security/axtria/axtria-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.axtria.com/)
+- [Changelog](https://www.axtria.com/product-release-notes)
+- [Blog](https://www.axtria.com/articles)
+- [Privacy policy](https://www.axtria.com/privacy-statement/)
+
+## API Evangelist rating
+
+**Kin Score 12.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/axtria/](https://apis.io/providers/axtria/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Axtria: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/axtria/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
